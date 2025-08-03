@@ -1,0 +1,24 @@
+{
+  "name": "Todo",
+  "version": "1.0.0",
+  "description": "Get your tasks done with **Todo** – a minimalistic, retro-styled to-do list companion 🐤. A small and playful to-do list app with a retro pixel-art style. Built with HTML, CSS, JavaScript, and Tauri to run as a fast, lightweight desktop application.",
+  "main": "duck.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tauri": "npx tauri dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivcabb/To-do-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivcabb/To-do-List/issues"
+  },
+  "homepage": "https://github.com/ivcabb/To-do-List#readme",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.7.1"
+  }
+}
