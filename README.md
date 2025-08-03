@@ -16,8 +16,7 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
 - Fast & tiny desktop app via Tauri
 - macOS & Windows support
 
-![alt text](screenshots/demo2.png)
-![alt text](screenshots/demo3.png)
+![alt text](screenshots/demo2.png) ![alt text](screenshots/demo3.png)
 
 ---
 
