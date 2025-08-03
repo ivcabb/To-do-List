@@ -1,19 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(254, 218, 133, 0.618);
   font-family: 'Press Start 2P', monospace;
-  background-color: #1a1a1a;
-  color: rgb(255, 218, 139);
+   color: rgb(255, 218, 139);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-right: 20px;
 }
 
 #app {
   display: flex;
   align-items: flex-end;
   gap: 0px;
+  -webkit-app-region: drag;
 }
 
 #todo-box {
@@ -22,16 +24,15 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 200px;
+  width: 300px;
+  height: 260px;
   transition: width 0.3s, height 0.3s;
 }
 
 h1 {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 8px;
+  margin: 10px 0 8px 0;
 }
 
 #date-controls {
@@ -61,6 +62,10 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0 0 12px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin: 0;
+  padding-right: 8px;
 }
 
 #task-list li {
@@ -116,6 +121,7 @@ h1 {
   cursor: pointer;
   box-shadow: 4px 4px 0 black;
   transition: transform 0.1s, box-shadow 0.1s;
+  margin-top: 17px;
 }
 
 #add-task-button:active {
@@ -147,7 +153,6 @@ h1 {
   gap: 6px;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
 }
 
 #task-input {
@@ -159,10 +164,10 @@ h1 {
   font-size: 20px;
   width: 160px;
   border: 3px solid black;
+  margin-top: 17px;
 }
 
 #duck-container img {
-  margin-right: 8px;
   image-rendering: pixelated;
   width: 180px;
   height: 180px;
@@ -174,5 +179,14 @@ h1 {
   font-size: 20px;
   text-align: center;
   margin-top: 8px;
-  color: rgb(255, 218, 139);
+  color: black;
+}
+
+#task-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+#task-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
