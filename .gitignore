@@ -1,12 +1,6 @@
 # macOS
 .DS_Store
 
-# Node.js / Electron
-node_modules/
-dist/
-out/
-build/
-
 # VS Code
 .vscode/
 

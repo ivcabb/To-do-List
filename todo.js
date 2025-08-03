@@ -114,13 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
     updateProgress();
   }
 
-  // TLAČÍTKO "Add new task"
+  // Výchozí stav: input skrytý, tlačítko "New Task"
+  addTaskBtn.textContent = 'New Task';
+  taskInput.style.display = 'none';
+
+  // TLAČÍTKO "New Task" / "Add"
   addTaskBtn.addEventListener('click', () => {
     if (taskInput.style.display === 'none' || taskInput.style.display === '') {
+      // zobraz input a změní tlačítko na Add
       taskInput.style.display = 'inline-block';
       addTaskBtn.textContent = 'Add';
       taskInput.focus();
     } else {
+      // přidat úkol, skrýt input, vrátit tlačítko na New Task
       const text = taskInput.value.trim();
       if (text !== '') {
         createTaskElement(text);
@@ -128,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         taskInput.value = '';
       }
       taskInput.style.display = 'none';
-      addTaskBtn.textContent = 'Add new task';
+      addTaskBtn.textContent = 'New Task';
     }
   });
 

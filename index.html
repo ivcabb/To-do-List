@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ToDo</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Todo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
 </head>
 <body>
-<div id="app">
-  <div id="duck-container">
-    <img id="duck" src="assets/duck.png" width="64" height="64" />
-    <div id="progress-display">Progress: 0%</div>
-  </div>
-  <div id="todo-box">
-    <h1>Tasks</h1>
-    <div id="date-controls">
-      <span id="prev-day">&lt;</span>
-      <span id="current-date">...</span>
-      <span id="next-day">&gt;</span>
+  <div id="app">
+    <div id="duck-container" class="no-drag">
+      <img id="duck" src="assets/duck.png" width="64" height="64" class="no-drag" draggable="false" />
+      <div id="progress-display" class="no-drag">Progress: 0%</div>
     </div>
-    <ul id="task-list"></ul>
-    <div id="task-input-container">
-        <input type="text" id="task-input" placeholder="New task..." style="display: none;">
-        <button id="add-task-button">Add new task</button>
-    </div>  
+    <div id="todo-box" class="no-drag">
+      <h1>Tasks</h1>
+      <div id="date-controls">
+        <span id="prev-day" class="no-drag">&lt;</span>
+        <span id="current-date" class="no-drag">...</span>
+        <span id="next-day" class="no-drag">&gt;</span>
+      </div>
+      <ul id="task-list"></ul>
+      <div id="task-input-container">
+        <input type="text" id="task-input" placeholder="New task..." class="no-drag" />
+        <button id="add-task-button" class="no-drag">New task</button>
+      </div>
+    </div>
   </div>
-</div>
-
   <script src="todo.js"></script>
   <script src="duck.js"></script>
 </body>
