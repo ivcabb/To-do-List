@@ -33,9 +33,6 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
 3.	Run the app in development:
     npm run tauri dev
 
-After building, you’ll find your macOS .app bundle in: 
-    src-tauri/target/release/bundle/macos/
-
 ---
 
 👤 Author
