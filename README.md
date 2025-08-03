@@ -34,7 +34,7 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
 
 ---
 
-👤 Author
+## 👤 Author
 
 Created by @ivcabb
 Pixel art & design: original artwork
