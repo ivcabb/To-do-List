@@ -36,6 +36,9 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
 
 After building, you’ll find your macOS .app bundle in: 
     src-tauri/target/release/bundle/macos/
+    
+To add the app to your Applications folder, copy the .app bundle there:
+    cp -R src-tauri/target/release/bundle/macos/Todo.app /Applications/ 
 
 ---
 
