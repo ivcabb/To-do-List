@@ -28,9 +28,14 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
    git clone https://github.com/ivcabb/TodoList.git
    cd TodoList
 2.	Install dependencies:
-    npm install --save-dev @tauri-apps/cli
+    npm install
 3.	Run the app in development:
-    npm run tauri dev
+    npm run tauri:dev
+4.	Build the final app:
+    npm run tauri:build
+
+After building, you’ll find your macOS .app bundle in: 
+    src-tauri/target/release/bundle/macos/
 
 ---
 
