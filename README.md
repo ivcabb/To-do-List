@@ -40,6 +40,25 @@ After building, you’ll find your macOS .app bundle in:
 To add the app to your Applications folder, copy the .app bundle there:
     cp -R src-tauri/target/release/bundle/macos/Todo.app /Applications/ 
 
+### Windows
+
+1. Clone this repository:
+   git clone https://github.com/ivcabb/TodoList.git
+   cd TodoList
+2.	Install dependencies:
+    npm install
+3.	Run the app in development:
+    npm run tauri:dev
+4.	Build the final app:
+    npm run tauri:build
+
+After building, you’ll find your Windows .exe installer and executable here:
+src-tauri\target\release\bundle\msi\ (for installer) or
+src-tauri\target\release\bundle\exe\ (for standalone executable)
+
+To install the app, run the .msi installer or use the .exe directly.
+You can also create a shortcut to the .exe file for easy access.
+
 ---
 
 ## 👤 Author
