@@ -5,7 +5,8 @@
   "main": "duck.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tauri": "npx tauri dev"
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
   },
   "repository": {
     "type": "git",

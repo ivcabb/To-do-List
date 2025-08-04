@@ -2,25 +2,25 @@
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Todo",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.ivcabb.todo",
   "build": {
-  "frontendDist": "../",
-  "devUrl": null,
-  "beforeDevCommand": "",
-  "beforeBuildCommand": ""
+    "frontendDist": "../dist",
+    "devUrl": null,
+    "beforeDevCommand": "",
+    "beforeBuildCommand": ""
   },
   "app": {
     "windows": [
-  {
-  "transparent": false,
-  "decorations": true,
-  "title": "Todo",
-  "width": 530,
-  "height": 350,
-  "resizable": false,
-  "fullscreen": false
-}
-],
+      {
+        "transparent": false,
+        "decorations": true,
+        "title": "Todo",
+        "width": 530,
+        "height": 350,
+        "resizable": false,
+        "fullscreen": false
+      }
+    ],
     "security": {
       "csp": null
     }
