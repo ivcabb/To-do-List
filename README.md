@@ -20,6 +20,13 @@ Get your tasks done with **Todo** – a minimalist, retro-styled task companion 
 
 ---
 
+## 🛠️ Prerequisites
+
+- Node.js (v16 or higher) — https://nodejs.org/
+- Rust (latest stable) — https://rustup.rs/
+
+---
+
 ## 🖥️ Installation
 
 ### macOS
